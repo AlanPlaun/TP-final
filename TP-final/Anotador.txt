@@ -1,0 +1,15 @@
+Cosas que vamos a usar:
+
+- Push Notifications
+https://blog.logrocket.com/create-send-push-notifications-react-native/#:~:text=To%20use%20push%20notifications%20in,received%20notifications%20we've%20sent.
+
+- Firebase
+https://console.firebase.google.com/project/tp-final-1f510/storage/tp-final-1f510.appspot.com/files?hl=es
+
+- Acceso al FileSystem
+https://docs.expo.dev/versions/latest/sdk/filesystem/
+
+- Acceso a la Cámara
+https://www.fullstacklabs.co/blog/react-native-camera
+
+Usar la camara, sacar una foto, que te notifique cuando se suba a Firebase, acceder al filesystem para poder seleccionar una foto, subirla a Firebase + la notificacion de vuelta y mostrarla.
