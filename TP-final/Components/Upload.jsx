@@ -92,7 +92,6 @@ export const Upload = () => {
                     size={120}
                     color="black"
                 />
-                <Text style={styles.texto}>Elegi la foto que quieras subir</Text>
             </Pressable>
         </View>
     );
