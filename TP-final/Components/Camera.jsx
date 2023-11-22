@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { Camera } from 'expo-camera';
 import * as FileSystem from 'expo-file-system';
-
+import { Ionicons } from '@expo/vector-icons';
+import { MaterialCommunityIcons
+ } from '@expo/vector-icons';
 export default function CameraScreen({ setPhotos }) {
     const [hasPermission, setHasPermission] = useState(null);
     const [cameraType, setCameraType] = useState(Camera.Constants.Type.back);
@@ -21,7 +23,6 @@ export default function CameraScreen({ setPhotos }) {
         if (camera) {
             const photo = await camera.takePictureAsync();
             setCapturedPhoto(photo);
-            savePhoto(photo.uri);
         }
     };
 
@@ -72,7 +73,7 @@ export default function CameraScreen({ setPhotos }) {
                             );
                         }}
                     >
-                        <Text style={{ fontSize: 18, marginBottom: 10, color: 'white' }}>Flip Camera</Text>
+                        <Text style={{ fontSize: 18, marginBottom: 10, color: 'white' }}> <Ionicons name="camera-reverse" size={24} color="white" /></Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={{
@@ -82,7 +83,7 @@ export default function CameraScreen({ setPhotos }) {
                         }}
                         onPress={takePicture}
                     >
-                        <Text style={{ fontSize: 18, marginBottom: 10, color: 'white' }}>Take Picture</Text>
+                        <Text style={{ fontSize: 18, marginBottom: 10, color: 'white' }}><MaterialCommunityIcons name="record-circle" size={24} color="white" /></Text>
                     </TouchableOpacity>
                 </View>
             </Camera>

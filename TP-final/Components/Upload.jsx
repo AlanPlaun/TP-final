@@ -42,23 +42,16 @@ export const Upload = () => {
     };
 
     const handleImagePicked = async (pickerResult) => {
-        try {
             setUploading(true);
 
             if (!pickerResult.canceled) {
                 const uploadUrl = await uploadImageAsync(pickerResult.uri);
                 setImage(uploadUrl);
             }
-        } catch (e) {
-            console.log(e);
-            alert("Upload failed, sorry :(");
-        } finally {
-            setUploading(false);
-        }
+      
     };
 
     async function uploadImageAsync(uri) {
-        try {
             const response = await fetch(uri);
             const blob = await response.blob();
 
@@ -71,10 +64,7 @@ export const Upload = () => {
             console.log(downloadURL);
 
             return downloadURL;
-        } catch (error) {
-            console.error(error);
-            throw new Error("Upload Failed");
-        }
+      
     }
 
     return (

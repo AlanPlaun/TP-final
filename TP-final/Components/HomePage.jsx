@@ -21,7 +21,7 @@ export const HomePage = () => {
                 <Pressable onPress={() => {
                 navigation.navigate("PushNotification");
             }}>
-                <Ionicons style={styles.icon} name="qr-code-outline" size={120} color="black" /></Pressable>
+                <Ionicons style={styles.icon} name="notifications" size={120} color="black" /></Pressable>
         </View>
     )
 }
