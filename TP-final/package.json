@@ -15,6 +15,7 @@
     "expo": "~49.0.15",
     "expo-barcode-scanner": "^12.7.0",
     "expo-camera": "~13.4.4",
+    "expo-contacts": "^12.4.0",
     "expo-device": "^5.6.0",
     "expo-file-system": "^15.6.0",
     "expo-image-picker": "^14.5.0",

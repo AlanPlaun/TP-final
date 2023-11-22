@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import HomePage from './Components/HomePage';
 import QR from './Components/QR';
-import Pushnotification from './Components/PushNotification';
+import Contactos from './Components/Contactos';
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
@@ -16,7 +16,7 @@ export default function App() {
       <Stack.Screen name="Home" component={HomePage}/>
       <Stack.Screen name="Camera" component={CameraScreen}/>
       <Stack.Screen name="QR" component={QR}/>
-      <Stack.Screen name="PushNotification" component={Pushnotification}/>
+      <Stack.Screen name="Contactos" component={Contactos}/>
 
       </Stack.Navigator>
       </NavigationContainer>
